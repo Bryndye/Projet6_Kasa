@@ -3,10 +3,22 @@
     margin-right: 120px;
     /* background-color: grey; */
 
-    height: 500px;
+    height: auto;
     margin-bottom: 50px;
 
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+@media (max-width:900px){
+    .banner{
+        height: 250px;
+    }
+
+    .containerCollapse{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 12px;
+    }
 }

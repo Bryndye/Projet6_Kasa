@@ -1,0 +1,48 @@
+.Error{
+  height: 100vh;
+  color: #FF6060;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Error div{
+  /* color: #FF6060; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.Error h2{
+  font-size: 255px;
+  font-style: normal;
+  margin:0;
+}
+
+.Error p{
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.Error a{
+  color: #FF6060;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 900px){
+  .Error h2{
+    font-size: 96px;
+    font-style: normal;
+  }
+
+  .Error p{
+    font-size: 18px;
+    text-align: center;
+  }
+
+}

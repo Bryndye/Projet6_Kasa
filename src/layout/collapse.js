@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
     
 function Collapse(props) {  
-    const [isCollapsed, setIsCollapsed] = useState(true);
+    const [isCollapsed, setIsCollapsed] = useState(false);
   
     const toggleCollapse = () => {
       setIsCollapsed(!isCollapsed);
@@ -12,7 +12,7 @@ function Collapse(props) {
         <div className='collapse'>
             <div className="collapseHeader">
                 <h2>{props.title}</h2>
-                <button onClick={toggleCollapse}>{isCollapsed? <i class="fa-solid fa-angle-down"></i>:<i class="fa-solid fa-angle-up"></i>}</button>
+                <button onClick={toggleCollapse}>{isCollapsed? <i className="fa-solid fa-angle-up"></i>:<i className="fa-solid fa-angle-down"></i>}</button>
             </div>
             <div className={isCollapsed?"collapseContainer": "collapseContainerHide"}>
                 <p>{props.text}</p>              

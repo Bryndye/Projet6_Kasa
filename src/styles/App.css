@@ -40,6 +40,7 @@
 body{
   font-family:'Montserrat', Arial, monospace;
   width: 100%;
+  font-size: 18px;
 }
 
 .header{
@@ -93,6 +94,10 @@ nav a {
 }
 
 @media (max-width: 900px){
+  body{
+    font-size: 14px;
+  }
+
   .header{
     height: 50px;
     padding-top: 20px;

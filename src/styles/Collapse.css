@@ -16,6 +16,14 @@
     margin: 0;
 }
 
+.collapseHeader button{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
 .collapseContainer{
     height: auto;
     padding: 10px;
