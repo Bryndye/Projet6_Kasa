@@ -1,6 +1,7 @@
 import '../styles/Home.css';
 import banner from  '../assets/banner.jpg';
 import Card from  '../layout/card.js';
+import data from '../assets/data.json';
 
 function Home() {  
     return (
@@ -10,13 +11,9 @@ function Home() {
         <h2>Chez vous, partout et ailleurs</h2>
       </div>
       <div className='containerCards'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {data.map(item => 
+          <Card title={item.title} link={item.id} img={item.cover}/>
+          )}
       </div>
     </section>
   );

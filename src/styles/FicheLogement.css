@@ -1,0 +1,12 @@
+.FicheLogement{
+    height: 100vh;
+}
+
+.BannerLogement{
+    height:400px;
+}
+
+.containerCollapses{
+    display: flex;
+    gap:70px
+}

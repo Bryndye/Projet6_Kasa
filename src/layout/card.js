@@ -1,8 +1,10 @@
-function Card() {  
+function Card(props) {  
     return (
         <div className='card'>
-            <img src="" alt='Card'></img>
-            <p>Titre de la location</p>
+            <a href={props.link}>
+                <img src={props.img} alt='cover'></img>
+                <p>{props.title}</p>
+            </a>
         </div>
   );
 }
