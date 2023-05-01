@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,11 +35,49 @@
   to {
     transform: rotate(360deg);
   }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+body{
+  font-family:'Montserrat', Arial, monospace;
+  width: 100%;
+}
+
+.header{
+  height: 150px;
+  /* width: 100%; */
+  color: #FF6060;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+nav a {
+  color: #FF6060;
+  text-decoration: none;
+}
+
+.header img{
+  width: 210px;
+  object-fit: contain;
+}
+
+.header nav{
+  display: flex;
+  gap: 50px;
+}
+
+.App, .header{
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .footer{
   height: 180px;
   width: 100%;
+  margin-top: 20px;
   background-color: black;
   color: white;
 
@@ -49,6 +87,35 @@
   align-items: center;
 }
 
+
 .footer-logo{
   width: 100px;
+}
+
+@media (max-width: 900px){
+  .header{
+    height: 50px;
+    padding-top: 20px;
+
+    font-size: 12px;
+    text-transform: uppercase ;
+  }
+
+  .header img{
+    width: 145px;
+  }
+
+  .header nav{
+    gap: 10px;
+  }
+
+  .footer{
+    font-size: 12px;
+  }
+
+  .App, .header{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
 }

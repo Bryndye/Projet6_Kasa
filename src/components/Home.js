@@ -1,11 +1,24 @@
-import '../styles/App.css';
+import '../styles/Home.css';
+import banner from  '../assets/banner.jpg';
+import Card from  '../layout/card.js';
 
 function Home() {  
     return (
-    <div>
-        Home
-        <a href="/about">About </a>
-    </div>
+    <section>
+      <div className='banner'>
+        <img src={banner} alt="Banner"></img>
+        <h2>Chez vous, partout et ailleurs</h2>
+      </div>
+      <div className='containerCards'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </section>
   );
 }
 

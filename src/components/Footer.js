@@ -1,5 +1,4 @@
-import '../styles/App.css';
-import logo from '../assets/LOGO.png';
+import logo from '../assets/LOGO_footer.png';
 
 function Footer() {  
     return (
