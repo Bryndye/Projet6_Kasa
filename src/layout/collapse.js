@@ -18,7 +18,7 @@ function Collapse(props) {
             <p key={index}>{element}</p>
         ));
     } else {
-        items = props.text;
+        items = <p>{props.text}</p>;
     }
 
     return (
@@ -28,7 +28,7 @@ function Collapse(props) {
                 <button onClick={toggleCollapse}>{isCollapsed? <i className="fa-solid fa-angle-up"></i>:<i className="fa-solid fa-angle-down"></i>}</button>
             </div>
             <div className={isCollapsed?"collapseContainer": "collapseContainerHide"}>
-                <p>{items}</p>              
+                {items}             
             </div>
         </div>
   );
