@@ -21,6 +21,7 @@ function Fiche(props) {
   const firstName = nameParts[0];
   const lastName = nameParts[1];
 
+
   const [index, setIndex] = useState(0);
   const NextClick = () => {
     if(index + 1 >= fiche.pictures.length){
@@ -40,12 +41,29 @@ function Fiche(props) {
     }
   };
   
+  const manyPictures = fiche.pictures.length > 1; 
+  console.log(fiche.pictures.length > 1);
+  const boutonsGalery = () => {
+    if (manyPictures === false) {
+      return null;
+    }
+    return (
+      <>
+        <button className='btn Left' onClick={PrevClick}>
+          <i className="fa-solid fa-chevron-left"></i>
+        </button>
+        <button className='btn Right' onClick={NextClick}>
+          <i className="fa-solid fa-chevron-right"></i>
+        </button>
+      </>
+    );
+  };
+  
   return (
     <section className='FicheLogement'>
       <div className='BannerLogement'>
         <img src={fiche.pictures[index]} alt='Logement'></img>
-        <button className='btn Left' onClick={PrevClick}><i className="fa-solid fa-chevron-left"></i></button>
-        <button className='btn Right' onClick={NextClick}><i className="fa-solid fa-chevron-right"></i></button>
+        {boutonsGalery}
       </div>
       <div>
         <div className='groupInfo'>
