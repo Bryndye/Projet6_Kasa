@@ -12,7 +12,7 @@ function Home() {
       </div>
       <div className='containerCards'>
         {data.map(item => 
-          <Card title={item.title} link={item.id} img={item.cover}/>
+          <Card title={item.title} link={'/fiche/'+item.id} img={item.cover} id={item.id}/>
           )}
       </div>
     </section>

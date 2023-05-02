@@ -8,6 +8,19 @@ function Collapse(props) {
       setIsCollapsed(!isCollapsed);
     };
 
+    const styles = {
+        display:"flex",
+        flexDirection: "column"
+    }
+    let items = null;
+    if (Array.isArray(props.text) && props.text.length > 0) {
+        items = props.text.map((element, index) => (
+            <p key={index}>{element}</p>
+        ));
+    } else {
+        items = props.text;
+    }
+
     return (
         <div className='collapse'>
             <div className="collapseHeader">
@@ -15,7 +28,7 @@ function Collapse(props) {
                 <button onClick={toggleCollapse}>{isCollapsed? <i className="fa-solid fa-angle-up"></i>:<i className="fa-solid fa-angle-down"></i>}</button>
             </div>
             <div className={isCollapsed?"collapseContainer": "collapseContainerHide"}>
-                <p>{props.text}</p>              
+                <p>{items}</p>              
             </div>
         </div>
   );
