@@ -11,7 +11,7 @@ import FicheDetail from "./assets/data.json";
 const Router = () => {
   const ficheRoutes = FicheDetail.map(fiche => (
     <Route key={fiche.id} path={`/fiche/${fiche.id}`} element={<Fiche id={fiche.id} />} />
-  ));
+  ));  
 
   return (
     <BrowserRouter>
@@ -19,6 +19,7 @@ const Router = () => {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="test" element={<Fiche id="c67ab8a7" />} />
         {ficheRoutes}
         <Route path="*" element={<NotFound />} />
       </Routes>

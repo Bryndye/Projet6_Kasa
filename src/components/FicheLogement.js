@@ -42,7 +42,7 @@ function Fiche(props) {
   };
   
   const manyPictures = fiche.pictures.length > 1; 
-  console.log(fiche.pictures.length > 1);
+
   const boutonsGalery = () => {
     if (manyPictures === false) {
       return null;
@@ -63,7 +63,7 @@ function Fiche(props) {
     <section className='FicheLogement'>
       <div className='BannerLogement'>
         <img src={fiche.pictures[index]} alt='Logement'></img>
-        {boutonsGalery}
+        {boutonsGalery()}
       </div>
       <div>
         <div className='groupInfo'>
