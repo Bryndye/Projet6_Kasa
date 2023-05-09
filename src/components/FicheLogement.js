@@ -55,6 +55,7 @@ function Fiche(props) {
         <button className='btn Right' onClick={NextClick}>
           <i className="fa-solid fa-chevron-right"></i>
         </button>
+        <p>{index+1}/{fiche.pictures.length}</p>
       </>
     );
   };

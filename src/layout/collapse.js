@@ -8,10 +8,10 @@ function Collapse(props) {
       setIsCollapsed(!isCollapsed);
     };
 
-    const styles = {
-        display:"flex",
-        flexDirection: "column"
-    }
+    // const styles = {
+    //     display:"flex",
+    //     flexDirection: "column"
+    // }
     let items = null;
     if (Array.isArray(props.text) && props.text.length > 0) {
         items = props.text.map((element, index) => (

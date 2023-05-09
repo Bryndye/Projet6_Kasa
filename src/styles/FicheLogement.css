@@ -15,6 +15,16 @@
     border-radius: inherit;
 }
 
+.BannerLogement p{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%, -50%);
+}
+
 .btn{
     background-color: transparent;
     border: 0;
