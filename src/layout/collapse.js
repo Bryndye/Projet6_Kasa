@@ -23,7 +23,7 @@ function Collapse(props) {
 
     return (
         <div className='collapse'>
-            <div className="collapseHeader">
+            <div className="collapseHeader" onClick={toggleCollapse}>
                 <h2>{props.title}</h2>
                 <button onClick={toggleCollapse}>{isCollapsed? <i className="fa-solid fa-angle-up"></i>:<i className="fa-solid fa-angle-down"></i>}</button>
             </div>

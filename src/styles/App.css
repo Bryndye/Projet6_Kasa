@@ -88,6 +88,9 @@ nav a {
   align-items: center;
 }
 
+.active-link{
+  text-decoration: underline;
+}
 
 .footer-logo{
   width: 100px;
